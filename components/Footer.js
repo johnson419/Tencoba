@@ -11,19 +11,19 @@ const Footer = () => {
             </div>
             <div className="flex justify-center space-x-4">
               <a href="#">
-                <img src="/link1.png" className="h-8" alt="links" />
+                <img src="/linkedin.png" className="h-8" alt="links" />
               </a>
               <a href="#">
-                <img src="/link2.png" className="h-8" alt="links" />
+                <img src="/twitter.png" className="h-8" alt="links" />
               </a>
               <a href="#">
-                <img src="/link3.png" className="h-8" alt="links" />
+                <img src="/messenger.png" className="h-8" alt="links" />
               </a>
               <a href="#">
-                <img src="/link4.png" className="h-8" alt="links" />
+                <img src="/telegram.png" className="h-8" alt="links" />
               </a>
               <a href="#">
-                <img src="/link5.png" className="h-8" alt="links" />
+                <img src="/youtube.png" className="h-8" alt="links" />
               </a>
             </div>
           </div>
@@ -52,7 +52,6 @@ const Footer = () => {
               <a href="#" className="hover:text-brightRed">
                 Privacy Policy
               </a>
-              <a href="https://storyset.com/people">People illustrations by Storyset</a>
             </div>
           </div>
   
@@ -74,6 +73,7 @@ const Footer = () => {
             <div className="flex flex-col hidden text-white md:block">
               <p>CopyRight &copy; 2023, All Rights Reserved.</p>
               <a href="https://storyset.com/people">People illustrations by Storyset</a>
+              <a target="_blank" href="https://icons8.com/icon/13963/twitter">Twitter</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
             </div>
           </div>
         </div>
