@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Login = () => {
   return (
     <div className="container mx-auto py-20">
@@ -8,7 +6,7 @@ const Login = () => {
           <div className="bg-gray-800 rounded-lg shadow-lg p-8">
             <div className="text-center">
               <a href="/" className="flex items-center justify-center mb-2">
-              <img src="/logo.png" alt="logo" className="h-8" /> 
+                <img src="/logo.png" alt="logo" className="h-8" />
               </a>
             </div>
             <h4 className="text-2xl font-semibold mb-4">Welcome to TENCOBA! 👋</h4>
