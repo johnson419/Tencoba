@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -13,18 +14,16 @@ const Hero = () => {
             Tencoba makes it easy for members to plan annual finances while
             keeping the larger financial goal in mind. Tencoba makes it easy for
             members to plan annual finances while keeping the larger financial
-            goal in mind.
-            Tencoba makes it easy for
-            members to plan annual finances while keeping the larger financial
-            goal in mind.
+            goal in mind. Tencoba makes it easy for members to plan annual
+            finances while keeping the larger financial goal in mind.
           </p>
           <div className="flex justify-start">
-            <a
-              href="#"
+            <Link
+              href="/Register"
               className="hidden md:block py-2 px-4 text-white bg-blue-500 rounded-lg shadow-md hover:bg-blue-600 transition-colors duration-300"
             >
               Get Started
-            </a>
+            </Link>
           </div>
         </div>
         {/* image - right-side */}

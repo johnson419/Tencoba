@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Nav = () => {
   return (
@@ -29,12 +30,12 @@ const Nav = () => {
 
         {/* Button */}
         <div className="flex mr-12">
-          <a
-            href="#"
+          <Link
+            href="/Login"
             className="hidden md:block py-2 px-4 text-white bg-blue-500 rounded-lg shadow-md hover:bg-blue-600 transition-colors duration-300"
           >
             Login
-          </a>
+          </Link>
         </div>
         <button
           id="menu-btn"
