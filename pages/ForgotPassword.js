@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link";
 
 const ForgotPassword = () => {
   return (
@@ -28,7 +29,10 @@ const ForgotPassword = () => {
               <button className="w-full py-2 px-4 bg-blue-500 text-white rounded-full font-semibold hover:bg-blue-600" type="submit">Send Reset Link</button>
             </form>
             <div className="text-center">
-              <a href="auth-login-basic.html" className="text-blue-500">Back to login</a>
+            <Link href="/Login" passHref className="text-blue-500">
+                {" "}
+                Back to Login
+              </Link>
             </div>
           </div>
         </div>

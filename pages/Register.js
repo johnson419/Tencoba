@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link";
 
 const Register = () => {
   return (
@@ -61,7 +62,10 @@ const Register = () => {
             </form>
             <p className="text-center">
               <span>Already have an account?</span>
-              <a href="auth-login-basic.html" className="text-blue-500">Sign in</a>
+              <Link href="/Login" passHref className="text-blue-500">
+                {" "}
+                Sign in
+              </Link>
             </p>
           </div>
         </div>
