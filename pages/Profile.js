@@ -1,5 +1,7 @@
-function Profile(){
-    return <h1>Profile Page</h1>
-}
+import DashNav from "@/components/DashNav";
 
-export default Profile
+const Profile = () => {
+  return <DashNav />;
+};
+
+export default Profile;

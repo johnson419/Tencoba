@@ -7,7 +7,13 @@ const Nav = () => {
       <div className="flex mt-5 ml-5 mr-5 items-center justify-between">
         {/* logo */}
         <div className="ml-12 pt-2">
-          <Image src="/logo.png" alt="logo" width={90} height={10} />{" "}
+          <Link
+            href="/"
+            passHref
+           
+          >
+            <Image src="/logo.png" alt="logo" width={90} height={10} />{" "}
+          </Link>
         </div>
         {/* navbar menus */}
         <div className="hidden md:flex space-x-6">
