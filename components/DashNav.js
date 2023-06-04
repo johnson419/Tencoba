@@ -1,12 +1,28 @@
-import Image from 'next/image';
-import { useState } from 'react';
+import Image from "next/image";
+import { useState, useEffect, useRef } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faSearch, faUser, faCog, faCreditCard, faPowerOff } from "@fortawesome/free-solid-svg-icons";
 
-const Navbar = () => {
+const DashNav = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const dropdownRef = useRef(null);
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
+
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setIsDropdownOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <nav className="bg-gray-800 py-4">
@@ -14,9 +30,11 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <button className="text-white">
-              <i className="bx bx-menu bx-sm"></i>
+              <FontAwesomeIcon icon={faBars} />
             </button>
-            <span className="ml-4 text-white font-semibold text-lg">Dashboard</span>
+            <span className="ml-4 text-white font-semibold text-lg">
+              Dashboard
+            </span>
           </div>
           <div className="flex items-center">
             <div className="relative">
@@ -26,9 +44,12 @@ const Navbar = () => {
                 placeholder="Search..."
                 aria-label="Search..."
               />
-              <i className="bx bx-search text-white absolute top-1/2 right-3 transform -translate-y-1/2"></i>
+              <FontAwesomeIcon
+                icon={faSearch}
+                className="text-white absolute top-1/2 right-3 transform -translate-y-1/2"
+              />
             </div>
-            <div className="relative ml-4">
+            <div className="relative ml-4" ref={dropdownRef}>
               <button
                 onClick={toggleDropdown}
                 className="text-white focus:outline-none"
@@ -44,31 +65,69 @@ const Navbar = () => {
               </button>
               {isDropdownOpen && (
                 <ul className="absolute top-10 right-0 bg-white text-gray-800 rounded-md shadow-md p-2">
-                  <li className="mb-2">
-                    <button className="flex items-center w-full py-2 px-4 hover:bg-gray-200 rounded">
-                      <i className="bx bx-user me-2"></i>
-                      <span className="align-middle">My Profile</span>
+                  <li>
+                    <a href="#" className="dropdown-item">
+                      <div className="flex items-center">
+                        <div className="flex-shrink-0 me-3">
+                          <div className="avatar avatar-online">
+                            <Image
+                              src="/two.jpeg"
+                              alt="Profile Image"
+                              className="w-10 h-10 rounded-circle"
+                              width={40}
+                              height={40}
+                            />
+                          </div>
+                        </div>
+                        <div className="flex-grow-1 flex-shrink-0 whitespace-nowrap">
+                          <span className="font-semibold block overflow-hidden overflow-ellipsis">
+                            John Doe
+                          </span>
+                          <small className="text-muted">Admin</small>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li>
+                    <div className="border-t my-2"></div>
+                  </li>
+                  <li>
+                    <button className="flex items-center w-full py-2 px-4 hover:bg-gray-100 rounded transition-colors duration-200">
+                      <FontAwesomeIcon icon={faUser} className="me-2 text-blue-500 text-lg" />
+                      <span className="align-middle text-sm font-medium">
+                        My Profile
+                      </span>
                     </button>
                   </li>
-                  <li className="mb-2">
-                    <button className="flex items-center w-full py-2 px-4 hover:bg-gray-200 rounded">
-                      <i className="bx bx-cog me-2"></i>
-                      <span className="align-middle">Settings</span>
+                  <li>
+                    <button className="flex items-center w-full py-2 px-4 hover:bg-gray-100 rounded transition-colors duration-200">
+                      <FontAwesomeIcon icon={faCog} className="me-2 text-blue-500 text-lg" />
+                      <span className="align-middle text-sm font-medium">
+                        Settings
+                      </span>
                     </button>
                   </li>
-                  <li className="mb-2">
-                    <button className="flex items-center w-full py-2 px-4 hover:bg-gray-200 rounded">
-                      <i className="bx bx-credit-card me-2"></i>
-                      <span className="align-middle">Billing</span>
-                      <span className="flex-shrink-0 bg-red-500 text-white rounded-full w-4 h-4 ml-1 flex items-center justify-center">
+                  <li>
+                    <button className="flex items-center w-full py-2 px-4 hover:bg-gray-100 rounded transition-colors duration-200">
+                      <FontAwesomeIcon icon={faCreditCard} className="me-2 text-blue-500 text-lg" />
+                      <span className="align-middle text-sm font-medium">
+                        Billing
+                      </span>
+                      <span className="flex-shrink-0 bg-red-500 text-white rounded-full w-5 h-5 ml-2 flex items-center justify-center">
                         4
                       </span>
                     </button>
                   </li>
-                  <li className="mb-2">
-                    <button className="flex items-center w-full py-2 px-4 hover:bg-gray-200 rounded">
-                      <i className="bx bx-power-off me-2"></i>
-                      <span className="align-middle">Log Out</span>
+                  <li>
+                    <div className="border-t my-2"></div>
+                  </li>
+                  <li>
+                    <button className="flex items-center w-full py-2 px-4 hover:bg-gray-100 rounded transition-colors duration-200">
+                      <FontAwesomeIcon icon={faPowerOff} className="me-2 text-blue-500 text-lg" />
+                      <span className="align-middle text-sm font-medium">
+                        Log Out
+                      </span>
                     </button>
                   </li>
                 </ul>
@@ -81,4 +140,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default DashNav;
