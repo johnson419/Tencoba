@@ -4,7 +4,7 @@ import { faHome, faChartLine, faWallet, faCreditCard } from '@fortawesome/free-s
 
 const Sidebar = () => {
   return (
-    <div className="bg-gray-800 text-white h-screen w-20 fixed top-0 left-3 py-4 px-2 flex flex-col items-center">
+    <div className="bg-gray-800 text-white h-screen mx-auto top-0 left-3 py-4 px-2 flex flex-col items-center">
       <a href="#" className="mb-8 flex flex-col items-center">
         <FontAwesomeIcon icon={faHome} size="2x" className="mb-2" />
         <span className="text-sm text-center">Home</span>
