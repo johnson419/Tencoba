@@ -1,11 +1,11 @@
 import React from "react";
 import Link from "next/link";
-import Navbar from "@/components/Navbar";
+import Nav from "@/components/Nav";
 
 const Login = () => {
   return (
     <>
-      <Navbar />
+      <Nav />
       <div className="container mx-auto py-20">
         <div className="flex justify-center">
           <div className="w-full max-w-md">
