@@ -1,6 +1,7 @@
 import DashNav from "@/components/DashNav";
 import Hero from "@/components/Hero";
 import Sidebar from "@/components/Sidebar";
+import Testimonials from "@/components/Testimonials";
 
 const Dashboard = () => {
   return (
@@ -13,6 +14,7 @@ const Dashboard = () => {
         <div className="sticky top-0">
           <DashNav />
           <Hero />
+          <Testimonials/>
         </div>
         {/* Add your Main Content here */}
       </div>
