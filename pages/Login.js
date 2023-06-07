@@ -75,13 +75,14 @@ const Login = () => {
                     <span className="ml-2">Remember Me</span>
                   </label>
                 </div>
-                <button
-                  type="submit"
-                  href="/Dashboard"
-                  className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition duration-200"
-                >
-                  Sign In
-                </button>
+                <Link href="/Dashboard">
+                  <button
+                    type="submit"
+                    className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition duration-200"
+                  >
+                    Sign In
+                  </button>
+                </Link>
               </form>
               <p className="text-center">
                 <span>New on our platform?</span>
