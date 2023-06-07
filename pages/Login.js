@@ -11,13 +11,13 @@ const Login = () => {
           <div className="w-full max-w-md">
             <div className="bg-gray-800 rounded-lg shadow-lg p-8">
               <div className="text-center">
-                <Link
+                {/* <Link
                   href="/"
                   passHref
                   className="flex items-center justify-center mb-2"
                 >
                   <img src="/logo.png" alt="logo" className="h-8" />
-                </Link>
+                </Link> */}
               </div>
               <h4 className="text-2xl font-semibold mb-4">
                 Welcome to TENCOBA! 👋
@@ -60,28 +60,6 @@ const Login = () => {
                       placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
                       className="w-full p-2 border border-gray-300 rounded"
                     />
-                    <span className="absolute top-1/2 right-4 -translate-y-1/2 cursor-pointer">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                        />
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M7 12a2 2 0 114 0 2 2 0 01-4 0z"
-                        />
-                      </svg>
-                    </span>
                   </div>
                 </div>
                 <div className="mb-4">
@@ -99,6 +77,7 @@ const Login = () => {
                 </div>
                 <button
                   type="submit"
+                  href="/Dashboard"
                   className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition duration-200"
                 >
                   Sign In
