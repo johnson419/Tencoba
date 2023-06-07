@@ -11,12 +11,6 @@ const ForgotPassword = () => {
           <div className="w-full max-w-md">
             <div className="bg-gray-800 rounded-lg shadow-lg p-8">
               <div className="text-center">
-                {/* <Link
-                  href="/"
-                  className="flex items-center justify-center mb-2"
-                >
-                  <img src="/logo.png" alt="logo" className="h-8" />
-                </Link> */}
               </div>
               <h4 className="text-2xl font-semibold mb-4">
                 Forgot Password? 🔒
