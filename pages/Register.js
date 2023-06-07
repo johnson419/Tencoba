@@ -84,12 +84,14 @@ const Register = () => {
                   />
                 </div>
                 <div className="mb-8">
-                  <button
-                    className="w-full py-2 px-4 bg-blue-500 text-white rounded-full font-semibold hover:bg-blue-600"
-                    type="submit"
-                  >
-                    Register
-                  </button>
+                  <Link href="/Dashboard">
+                    <button
+                      className="w-full py-2 px-4 bg-blue-500 text-white rounded-full font-semibold hover:bg-blue-600"
+                      type="submit"
+                    >
+                      Register
+                    </button>
+                  </Link>
                 </div>
               </form>
               <p className="text-center">
