@@ -2,17 +2,14 @@ import React from "react";
 import img from "next/image";
 import Footer from "@/components/Footer";
 
-// import { useNavigate } from "react-router-dom";
-
-import  Button from "components/Button";
-import Slider from "components/Slider"
+import Button from "@/components/about/Button";
+import Slider from "@/components/about/Slider";
 import Navbar from "@/components/Navbar";
-import PageIndicator from "components/PageIndicator"
-import TeamCard from "components/TeamCard";
+import PageIndicator from "@/components/about/PageIndicator";
+import TeamCard from "@/components/about/TeamCard";
+import Footer from "@/components/Footer";
 
 const About = () => {
-//   const navigate = useNavigate();
-
   const sliderRef = React.useRef(null);
   const [sliderState, setsliderState] = React.useState(0);
   const sliderRef1 = React.useRef(null);
@@ -20,30 +17,59 @@ const About = () => {
 
   return (
     <>
-    <Navbar />
+      <Navbar />
       <div className="bg-gray_50 flex flex-col font-rubik sm:gap-10 md:gap-10 gap-[100px] items-start justify-start mx-auto w-auto sm:w-full md:w-full">
-        
         <div className="flex flex-col items-start justify-start md:px-10 sm:px-5 px-[75px] w-full">
           <div className="flex md:flex-col flex-row md:gap-10 gap-[138px] items-center justify-between max-w-[1290px] mx-auto w-full">
             <div className="flex flex-1 flex-col gap-14 items-start justify-start w-full">
               <div className="flex flex-col gap-[25px] items-start justify-start w-full">
                 <div className="flex flex-col gap-[25px] items-start justify-start w-full">
-                  <p
-                    className="leading-[60.00px] max-w-[626px] md:max-w-full text-black_900 tracking-[-0.50px]"
-                   
-                  >
-                    Provide the best quality ingredients for home products
+                  <p className="leading-[60.00px] max-w-[626px] md:max-w-full text-black_900 tracking-[-0.50px]">
+                    Welcome to Tencoba
                   </p>
                   <p
                     className="font-normal leading-[35.00px] max-w-[626px] md:max-w-full text-gray_500 tracking-[-0.50px]"
                     variant="body2"
                   >
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit
-                    dictumst posuere, lectus dis vehicula augue elementum quam
-                    risus. Placerat dictum lobortis lacinia volutpat morbi cum
-                    justo commodo est aliquam, facilisi consequat ligula vivamus
-                    faucibus
+                    At Tencoba, we are dedicated to simplifying the process of
+                    annual financial planning while ensuring that you stay
+                    focused on your larger financial goals. Our mission is to
+                    empower individuals and families by providing a
+                    user-friendly platform that streamlines the complexities of
+                    financial planning.
                   </p>
+                  <p
+                    className="font-normal leading-[35.00px] max-w-[626px] md:max-w-full text-gray_500 tracking-[-0.50px]"
+                    variant="body2"
+                  >
+                    We understand that planning your annual finances can be
+                    overwhelming, with numerous expenses and financial goals to
+                    consider. That's why we created Tencoba, a powerful tool
+                    designed to make the process easy, intuitive, and effective.
+                    With Tencoba, you can take control of your financial future
+                    and confidently make informed decisions.
+                  </p>
+                  <p
+                    className="font-normal leading-[35.00px] max-w-[626px] md:max-w-full text-gray_500 tracking-[-0.50px]"
+                    variant="body2"
+                  >
+                    Our journey began with a vision to transform the way people
+                    approach financial planning. We recognized the need for a
+                    solution that combines simplicity and effectiveness to help
+                    individuals achieve their long-term financial aspirations.
+                    Leveraging the expertise of our team, which comprises
+                    financial advisors and technology specialists, we developed
+                    Tencoba to be your trusted companion on your financial
+                    journey.
+                  </p>
+                  <p
+                    className="font-normal leading-[35.00px] max-w-[626px] md:max-w-full text-gray_500 tracking-[-0.50px]"
+                    variant="body2"
+                  ></p>
+                  <p
+                    className="font-normal leading-[35.00px] max-w-[626px] md:max-w-full text-gray_500 tracking-[-0.50px]"
+                    variant="body2"
+                  ></p>
                 </div>
                 <Button className="border border-black_900 border-solid cursor-pointer font-semibold leading-[normal] min-w-[172px] sm:px-5 px-[25px] py-3 text-black_900 text-center text-lg tracking-[-0.50px]">
                   Meet our Team
@@ -87,27 +113,23 @@ const About = () => {
                       <div className="flex my-auto w-[68%]">
                         <img
                           src="/img_unsplashwnolnjo7ts8.png"
-            
                           className="h-[50px] my-auto rounded-[50%] w-[50px]"
                           alt="unsplashwnolnjo"
                         />
                         <img
                           src="/img_unsplashrtvgs4vgkgm.png"
-                          
                           className="h-[50px] ml-[-5px] my-auto rounded-[50%] w-[50px] z-[1]"
                           alt="unsplashrtvgs4v"
                         />
                       </div>
                       <img
                         src="/img_unsplashd1upkifd04a.png"
-                        
                         className="h-[50px] ml-[-5px] my-auto rounded-[50%] w-[50px] z-[1]"
                         alt="unsplashd1upkif"
                       />
                     </div>
                     <img
                       src="/img_unsplashplsf6obtgms.png"
-                     
                       className="h-[50px] ml-[-5px] my-auto rounded-[50%] w-[50px] z-[1]"
                       alt="unsplashplsf6ob"
                     />
@@ -123,7 +145,6 @@ const About = () => {
             </div>
             <img
               src="/img_rectangle1492.png"
-              
               className="h-[650px] sm:h-auto max-h-[650px] object-cover rounded-bl-[300px] rounded-tl-[300px] rounded-tr-[300px] sm:w-[] md:w-[]"
               alt="rectangle1492"
             />
@@ -141,37 +162,31 @@ const About = () => {
             <div className="flex md:flex-col flex-row md:gap-[50px] items-start justify-between w-full">
               <img
                 src="/img_search.svg"
-                
                 className="h-12 w-[220px]"
                 alt="search"
               />
               <img
                 src="/img_companylogocompany109_gray_53.svg"
-                
                 className="h-12 w-[125px]"
                 alt="companylogocomp"
               />
               <img
                 src="/img_companylogocompany109.svg"
-                
                 className="h-12 w-[92px]"
                 alt="companylogocomp_One"
               />
               <img
                 src="/img_companylogocompany109_gray_53_48x141.svg"
-               
                 className="h-12 w-[141px]"
                 alt="companylogocomp_Two"
               />
               <img
                 src="/img_companylogocompany109_gray_53_48x134.svg"
-                
                 className="h-12 w-[134px]"
                 alt="companylogocomp_Three"
               />
               <img
                 src="/img_companylogocompany109_gray_53_48x132.svg"
-                
                 className="h-12 w-[132px]"
                 alt="companylogocomp_Four"
               />
@@ -514,10 +529,8 @@ const About = () => {
             </div>
           </div>
         </div>
-        
-        
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };

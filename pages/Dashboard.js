@@ -1,7 +1,7 @@
 import DashNav from "@/components/DashNav";
-import Hero from "@/components/Hero";
+import Hero from "@/components/homepage/Hero";
 import Sidebar from "@/components/Sidebar";
-import Testimonials from "@/components/Testimonials";
+import Testimonials from "@/components/homepage/Testimonials";
 
 const Dashboard = () => {
   return (
