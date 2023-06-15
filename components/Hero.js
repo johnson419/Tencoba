@@ -29,7 +29,7 @@ const Hero = () => {
         {/* image - right-side */}
         <div className="md:w-1/2">
           <div className="flex justify-center">
-            <Image src="/hey.svg" alt="right side" width={500} height={500} />
+            <Image src="/3d.png" alt="right side" width={500} height={500} />
           </div>
         </div>
       </div>
