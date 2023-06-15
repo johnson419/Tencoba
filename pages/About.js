@@ -20,8 +20,9 @@ const About = () => {
 
   return (
     <>
+    <Navbar />
       <div className="bg-gray_50 flex flex-col font-rubik sm:gap-10 md:gap-10 gap-[100px] items-start justify-start mx-auto w-auto sm:w-full md:w-full">
-        <Navbar />
+        
         <div className="flex flex-col items-start justify-start md:px-10 sm:px-5 px-[75px] w-full">
           <div className="flex md:flex-col flex-row md:gap-10 gap-[138px] items-center justify-between max-w-[1290px] mx-auto w-full">
             <div className="flex flex-1 flex-col gap-14 items-start justify-start w-full">
@@ -169,7 +170,7 @@ const About = () => {
                 alt="companylogocomp_Three"
               />
               <img
-                src="images/img_companylogocompany109_gray_53_48x132.svg"
+                src="/img_companylogocompany109_gray_53_48x132.svg"
                 
                 className="h-12 w-[132px]"
                 alt="companylogocomp_Four"
@@ -514,8 +515,9 @@ const About = () => {
           </div>
         </div>
         
-        <Footer/>
+        
       </div>
+      <Footer/>
     </>
   );
 };
