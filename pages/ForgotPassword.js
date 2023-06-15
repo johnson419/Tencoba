@@ -1,22 +1,16 @@
 import React from "react";
 import Link from "next/link";
-import Navbar from "@/components/Navbar";
+import Nav from "@/components/Nav";
 
 const ForgotPassword = () => {
   return (
     <>
-      <Navbar />
+      <Nav />
       <div className="container mx-auto py-20">
         <div className="flex justify-center">
           <div className="w-full max-w-md">
             <div className="bg-gray-800 rounded-lg shadow-lg p-8">
               <div className="text-center">
-                <Link
-                  href="/"
-                  className="flex items-center justify-center mb-2"
-                >
-                  <img src="/logo.png" alt="logo" className="h-8" />
-                </Link>
               </div>
               <h4 className="text-2xl font-semibold mb-4">
                 Forgot Password? 🔒
