@@ -27,7 +27,7 @@ const Sidebar = () => {
             passHref
             className="cursor-pointer border-gray-100 pb-4"
           >
-            <Image src="/logo.png" alt="logo" width={90} height={10} />{" "}
+            <Image src="/logo.png" alt="logo" width={150} height={10} />{" "}
           </Link>
             {/* <h1 className="text-base text-center cursor-pointer font-bold text-gray-300 border-gray-100 pb-4 w-full">
               TENCOBA

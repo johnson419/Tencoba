@@ -12,7 +12,7 @@ const Nav = () => {
             passHref
            
           >
-            <Image src="/logo.png" alt="logo" width={90} height={10} />{" "}
+            <Image src="/logo.png" alt="logo" width={150} height={10} />{" "}
           </Link>
         </div>
         {/* navbar menus */}
