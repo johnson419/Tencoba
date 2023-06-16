@@ -1,7 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { MdOutlineSpaceDashboard, MdOutlineAnalytics, MdOutlineIntegrationInstructions, MdOutlineSettings, MdOutlineMoreHoriz, MdOutlineLogout } from "react-icons/md";
+import {
+  MdOutlineSpaceDashboard,
+  MdOutlineAnalytics,
+  MdOutlineIntegrationInstructions,
+  MdOutlineSettings,
+  MdOutlineMoreHoriz,
+  MdOutlineLogout,
+} from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { FaRegComments } from "react-icons/fa";
 import { BiMessageSquareDots } from "react-icons/bi";
@@ -22,13 +29,13 @@ const Sidebar = () => {
         {/* Side Panel */}
         <div className="p-6 w-1/2 h-screen bg-gray-800 z-20 fixed top-0 -left-96 lg:w-60 lg:left-0 peer-focus:left-0 peer:transition ease-out delay-150 duration-200">
           <div className="flex flex-col justify-start items-center">
-          <Link
-            href="/"
-            passHref
-            className="cursor-pointer border-gray-100 pb-4"
-          >
-            <Image src="/logo.png" alt="logo" width={150} height={10} />{" "}
-          </Link>
+            <Link
+              href="/"
+              passHref
+              className="cursor-pointer border-gray-100 pb-4"
+            >
+              <Image src="/logo.png" alt="logo" width={150} height={10} />{" "}
+            </Link>
             {/* <h1 className="text-base text-center cursor-pointer font-bold text-gray-300 border-gray-100 pb-4 w-full">
               TENCOBA
             </h1> */}
