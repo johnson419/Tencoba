@@ -1,11 +1,4 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHome,
-  faChartLine,
-  faWallet,
-  faCreditCard,
-} from "@fortawesome/free-solid-svg-icons";
 import { MdOutlineSpaceDashboard, MdOutlineAnalytics, MdOutlineIntegrationInstructions } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { FaRegComments } from "react-icons/fa";
