@@ -10,14 +10,14 @@ const Dashboard = () => {
         <Sidebar />
       </div>
 
-      <div className="flex-1 pl-10">
+      {/* <div className="flex-1 pl-10">
         <div className="sticky top-0">
           <DashNav />
           <Hero />
           <Testimonials/>
         </div>
-        {/* Add your Main Content here */}
-      </div>
+        Add your Main Content here
+      </div> */}
     </div>
   );
 };
