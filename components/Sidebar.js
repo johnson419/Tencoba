@@ -1,5 +1,5 @@
 import React from "react";
-import { MdOutlineSpaceDashboard, MdOutlineAnalytics, MdOutlineIntegrationInstructions } from "react-icons/md";
+import { MdOutlineSpaceDashboard, MdOutlineAnalytics, MdOutlineIntegrationInstructions, MdOutlineSettings, MdOutlineMoreHoriz } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { FaRegComments } from "react-icons/fa";
 import { BiMessageSquareDots } from "react-icons/bi";
@@ -64,6 +64,24 @@ const Sidebar = () => {
                 <MdOutlineIntegrationInstructions className="text-2xl text-gray-300 group-hover:text-black" />
                 <h3 className="text-base text-gray-300 group-hover:text-black font-semibold mr-1">
                   Integrations
+                </h3>
+              </div>
+            </div>
+
+            {/* Settings & More */}
+            <div className="my-4 border-b border-gray-800 pb-4">
+              <div className="flex mb-2 justify-start items-center gap-5 px-5 hover:bg-gray-500 p-2 rounded-md group cursor pointer hover:shadow-lg m-auto">
+                {/* Needed Icons */}
+                <MdOutlineSettings className="text-2xl text-gray-300 group-hover:text-black" />
+                <h3 className="text-base text-gray-300 group-hover:text-black font-semibold mr-1">
+                  Settings
+                </h3>
+              </div>
+              <div className="flex mb-2 justify-start items-center gap-5 px-5 hover:bg-gray-500 p-2 rounded-md group cursor pointer hover:shadow-lg m-auto">
+                {/* Needed Icons */}
+                <MdOutlineMoreHoriz className="text-2xl text-gray-300 group-hover:text-black" />
+                <h3 className="text-base text-gray-300 group-hover:text-black font-semibold mr-1">
+                  More
                 </h3>
               </div>
             </div>
