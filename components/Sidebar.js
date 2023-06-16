@@ -29,11 +29,11 @@ const Sidebar = () => {
         <div className="p-6 w-1/2 h-screen bg-gray-800 z-20 fixed top-0 -left-96 lg:w-60 lg:left-0 peer-focus:left-0 peer:transition ease-out delay-150 duration-200">
           <div className="flex flex-col justify-start items-center">
                 <h1 className="text-base text-center cursor-pointer font-bold text-gray-300 border-gray-100 pb-4 w-full">TENCOBA</h1>
-                <div className="my-4 border-b border-gray-100 pb-4">
-                  <div className="flex mb-2 justify-start items-center gap-4 pl-5 hover:bg-gray-500 p-2 rounded-md group cursor pointer hover:shadow-lg m-auto">
+                <div className="my-4 border-b border-gray-800 pb-4">
+                  <div className="flex mb-2 justify-start items-center gap-5 pl-5 hover:bg-gray-500 p-2 rounded-md group cursor pointer hover:shadow-lg m-auto">
                     {/* Needed Icons */}
                     <MdOutlineSpaceDashboard className="text-2xl text-gray-300 group-hover:text-black" />
-                    <h3 className="text-base text-gray-300 group-hover:text-black font-semibold">Dashboard</h3>
+                    <h3 className="text-base text-gray-300 group-hover:text-black font-semibold mr-2">Dashboard</h3>
                   </div>
                 </div>
           </div>
