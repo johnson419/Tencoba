@@ -1,13 +1,13 @@
-import Baselayout from "@/components/Baselayout";
+import BaseLayout from "@/components/Baselayout";
 import DashNav from "@/components/DashNav";
 import Hero from "@/components/Hero";
 // import Sidebar from "@/components/Sidebar";
 
 const Profile = () => {
   return (
-    <Baselayout>
+    <BaseLayout>
         <Hero/>
-    </Baselayout>
+    </BaseLayout>
 );
 };
 
