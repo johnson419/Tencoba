@@ -40,77 +40,77 @@ const Sidebar = () => {
               TENCOBA
             </h1> */}
             <div className="my-4 border-b border-gray-800 pb-4 w-full">
-              <div className="flex mb-2 justify-start items-center gap-5 px-5 hover:bg-gray-500 p-2 rounded-md group cursor pointer hover:shadow-lg m-auto">
+              <Link href="/Dashboard" className="flex mb-2 justify-start items-center gap-5 px-5 hover:bg-gray-500 p-2 rounded-md group cursor pointer hover:shadow-lg m-auto">
                 {/* Needed Icons */}
                 <MdOutlineSpaceDashboard className="text-2xl text-gray-300 group-hover:text-black" />
                 <h3 className="text-base text-gray-300 group-hover:text-black font-semibold mr-1">
                   Dashboard
                 </h3>
-              </div>
-              <div className="flex mb-2 justify-start items-center gap-5 px-5 hover:bg-gray-500 p-2 rounded-md group cursor pointer hover:shadow-lg m-auto">
+              </Link>
+              <Link href="/Profile" className="flex mb-2 justify-start items-center gap-5 px-5 hover:bg-gray-500 p-2 rounded-md group cursor pointer hover:shadow-lg m-auto">
                 {/* Needed Icons */}
                 <CgProfile className="text-2xl text-gray-300 group-hover:text-black" />
                 <h3 className="text-base text-gray-300 group-hover:text-black font-semibold mr-1">
                   Profile
                 </h3>
-              </div>
-              <div className="flex mb-2 justify-start items-center gap-5 px-5 hover:bg-gray-500 p-2 rounded-md group cursor pointer hover:shadow-lg m-auto">
+              </Link>
+              <Link href="/" className="flex mb-2 justify-start items-center gap-5 px-5 hover:bg-gray-500 p-2 rounded-md group cursor pointer hover:shadow-lg m-auto">
                 {/* Needed Icons */}
                 <FaRegComments className="text-2xl text-gray-300 group-hover:text-black" />
                 <h3 className="text-base text-gray-300 group-hover:text-black font-semibold mr-1">
                   Comments
                 </h3>
-              </div>
-              <div className="flex mb-2 justify-start items-center gap-5 px-5 hover:bg-gray-500 p-2 rounded-md group cursor pointer hover:shadow-lg m-auto">
+              </Link>
+              <Link href="/" className="flex mb-2 justify-start items-center gap-5 px-5 hover:bg-gray-500 p-2 rounded-md group cursor pointer hover:shadow-lg m-auto">
                 {/* Needed Icons */}
                 <MdOutlineAnalytics className="text-2xl text-gray-300 group-hover:text-black" />
                 <h3 className="text-base text-gray-300 group-hover:text-black font-semibold mr-1">
                   Analytics
                 </h3>
-              </div>
-              <div className="flex mb-2 justify-start items-center gap-5 px-5 hover:bg-gray-500 p-2 rounded-md group cursor pointer hover:shadow-lg m-auto">
+              </Link>
+              <Link href ="/" className="flex mb-2 justify-start items-center gap-5 px-5 hover:bg-gray-500 p-2 rounded-md group cursor pointer hover:shadow-lg m-auto">
                 {/* Needed Icons */}
                 <BiMessageSquareDots className="text-2xl text-gray-300 group-hover:text-black" />
                 <h3 className="text-base text-gray-300 group-hover:text-black font-semibold mr-1">
                   Messages
                 </h3>
-              </div>
-              <div className="flex mb-2 justify-start items-center gap-5 px-5 hover:bg-gray-500 p-2 rounded-md group cursor pointer hover:shadow-lg m-auto">
+              </Link>
+              <Link href="/" className="flex mb-2 justify-start items-center gap-5 px-5 hover:bg-gray-500 p-2 rounded-md group cursor pointer hover:shadow-lg m-auto">
                 {/* Needed Icons */}
                 <MdOutlineIntegrationInstructions className="text-2xl text-gray-300 group-hover:text-black" />
                 <h3 className="text-base text-gray-300 group-hover:text-black font-semibold mr-1">
                   Integrations
                 </h3>
-              </div>
+              </Link>
             </div>
 
             {/* Settings & More */}
             <div className="my-4 border-b border-gray-800 pb-4 w-full">
-              <div className="flex mb-2 justify-start items-center gap-5 px-5 hover:bg-gray-500 p-2 rounded-md group cursor pointer hover:shadow-lg m-auto">
+              <Link href="/" className="flex mb-2 justify-start items-center gap-5 px-5 hover:bg-gray-500 p-2 rounded-md group cursor pointer hover:shadow-lg m-auto">
                 {/* Needed Icons */}
                 <MdOutlineSettings className="text-2xl text-gray-300 group-hover:text-black" />
                 <h3 className="text-base text-gray-300 group-hover:text-black font-semibold mr-1">
                   Settings
                 </h3>
-              </div>
-              <div className="flex mb-2 justify-start items-center gap-5 px-5 hover:bg-gray-500 p-2 rounded-md group cursor pointer hover:shadow-lg m-auto">
+              </Link>
+              <Link href="/" className="flex mb-2 justify-start items-center gap-5 px-5 hover:bg-gray-500 p-2 rounded-md group cursor pointer hover:shadow-lg m-auto">
                 {/* Needed Icons */}
                 <MdOutlineMoreHoriz className="text-2xl text-gray-300 group-hover:text-black" />
                 <h3 className="text-base text-gray-300 group-hover:text-black font-semibold mr-1">
                   More
                 </h3>
-              </div>
+              </Link>
             </div>
 
             {/* Logout */}
             <div className="my-4 w-full">
-              <div className="flex mb-2 justify-start items-center gap-5 px-5 border border-gray-500 hover:bg-gray-500 p-2 rounded-md group cursor pointer hover:shadow-lg m-auto">
+              <Link href="/" className="flex mb-2 justify-start items-center gap-5 px-5 border border-gray-500 hover:bg-gray-500 p-2 rounded-md group cursor pointer hover:shadow-lg m-auto">
                 {/* Needed Icons */}
                 <MdOutlineLogout className="text-2xl text-gray-300 group-hover:text-black" />
                 <h3 className="text-base text-gray-300 group-hover:text-black font-semibold mr-1">
                   Log out
                 </h3>
-              </div>
+              </Link>
             </div>
           </div>
         </div>
