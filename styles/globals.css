@@ -25,3 +25,10 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.layout{
+  display: flex;
+  /* height: 100vh; */
+  /* position: relative; */
+  /* gap: 2rem; */
+}

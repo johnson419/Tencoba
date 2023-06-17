@@ -1,5 +1,12 @@
+import Sidebar from "@/components/Sidebar";
+
 function About(){
-    return <h1>About Page</h1>
+    return (
+        <div>
+            <Sidebar/>
+            hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
+        </div>
+    );
 }
 
 export default About
