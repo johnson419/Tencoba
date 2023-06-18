@@ -1,9 +1,9 @@
-import Head from "@/components/Head";
+import SiteTitle from "@/components/SiteTitle";
 
 function About() {
   return (
     <>
-    <Head/>
+    <SiteTitle/>
       <div>
         <h1>About</h1>
       </div>

@@ -1,5 +1,5 @@
 import BaseLayout from "@/components/BaseLayout";
-import Head from "@/components/Head";
+import Head from "@/components/SiteTitle";
 import Hero from "@/components/Hero";
 
 const Profile = () => {

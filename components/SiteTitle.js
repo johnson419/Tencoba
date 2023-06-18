@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Head = () => {
+const SiteTitle = () => {
   return (
     <div>
     <Head>
@@ -12,4 +12,4 @@ const Head = () => {
   )
 }
 
-export default Head
+export default SiteTitle

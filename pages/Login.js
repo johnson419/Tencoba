@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Nav from "@/components/Nav";
-import Head from "@/components/Head";
+import Head from "@/components/SiteTitle";
 
 const Login = () => {
   return (
