@@ -5,7 +5,6 @@ import Hero from "@/components/Hero";
 function Dashboard() {
   return (
     <BaseLayout>
-      <DashNav />
       <Hero />
       <Hero />
     </BaseLayout>
