@@ -1,11 +1,14 @@
-// import Sidebar from "@/components/Sidebar";
+import Head from "@/components/Head";
 
-function About(){
-    return (
-        <div>
-            <h1>About</h1>
-        </div>
-    );
+function About() {
+  return (
+    <>
+    <Head/>
+      <div>
+        <h1>About</h1>
+      </div>
+    </>
+  );
 }
 
-export default About
+export default About;
