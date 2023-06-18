@@ -1,10 +1,12 @@
 import React from "react";
 import Link from "next/link";
 import Nav from "@/components/Nav";
+import Head from "@/components/Head";
 
 const Login = () => {
   return (
     <>
+      <Head/>
       <Nav />
       <div className="container mx-auto py-20">
         <div className="flex justify-center">
