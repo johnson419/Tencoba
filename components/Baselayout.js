@@ -1,3 +1,4 @@
+import DashNav from "./DashNav";
 import Sidebar from "./Sidebar";
 
 export default function BaseLayout({ children }) {
@@ -7,6 +8,7 @@ export default function BaseLayout({ children }) {
         <Sidebar />
       </div>
       <div className="w-5/6">
+        <DashNav />
         {children}
       </div>
     </div>

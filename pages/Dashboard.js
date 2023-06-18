@@ -1,16 +1,15 @@
-import BaseLayout from "@/components/Baselayout";
+import BaseLayout from "@/components/BaseLayout";
 import DashNav from "@/components/DashNav";
 import Hero from "@/components/Hero";
-import Sidebar from "@/components/Sidebar";
-import Testimonials from "@/components/Testimonials";
 
-const Dashboard = () => {
+function Dashboard() {
   return (
     <BaseLayout>
-      <Hero/>
-      <Hero/>
+      <DashNav />
+      <Hero />
+      <Hero />
     </BaseLayout>
   );
-};
+}
 
 export default Dashboard;
