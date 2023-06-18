@@ -1,11 +1,11 @@
 import BaseLayout from "@/components/BaseLayout";
-import Head from "@/components/SiteTitle";
 import Hero from "@/components/Hero";
+import SiteTitle from "@/components/SiteTitle";
 
 const Profile = () => {
   return (
     <>
-      <Head />
+      <SiteTitle />
       <BaseLayout>
         <Hero />
       </BaseLayout>
