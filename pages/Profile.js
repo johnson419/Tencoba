@@ -1,11 +1,15 @@
 import BaseLayout from "@/components/BaseLayout";
+import Head from "@/components/Head";
 import Hero from "@/components/Hero";
 
 const Profile = () => {
   return (
-    <BaseLayout>
-      <Hero />
-    </BaseLayout>
+    <>
+      <Head />
+      <BaseLayout>
+        <Hero />
+      </BaseLayout>
+    </>
   );
 };
 
