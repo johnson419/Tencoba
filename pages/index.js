@@ -1,16 +1,16 @@
-import Head from "next/head";
-import Head from "@/components/SiteTitle";
+import SiteTitle from "@/components/SiteTitle";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Feature from "@/components/Feature";
 import Testimonials from "@/components/Testimonials";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
+import SiteTitle from "@/components/SiteTitle";
 
 const Landing = () => {
   return (
     <>
-      <Head/>
+      <SiteTitle/>
       <div>
         <Navbar />
         <Hero />

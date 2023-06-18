@@ -1,11 +1,12 @@
 import BaseLayout from "@/components/BaseLayout";
-import Head from "@/components/SiteTitle";
+import SiteTitle from "@/components/SiteTitle";
 import Hero from "@/components/Hero";
+import SiteTitle from "@/components/SiteTitle";
 
 function Dashboard() {
   return (
     <>
-      <Head />
+      <SiteTitle />
       <BaseLayout>
         <Hero />
         <Hero />
