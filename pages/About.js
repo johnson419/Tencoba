@@ -1,10 +1,9 @@
-import Sidebar from "@/components/Sidebar";
+// import Sidebar from "@/components/Sidebar";
 
 function About(){
     return (
         <div>
-            <Sidebar/>
-            hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
+            <h1>About</h1>
         </div>
     );
 }
