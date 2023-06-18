@@ -4,9 +4,9 @@ import Hero from "@/components/Hero";
 const Profile = () => {
   return (
     <BaseLayout>
-        <Hero/>
+      <Hero />
     </BaseLayout>
-);
+  );
 };
 
 export default Profile;
