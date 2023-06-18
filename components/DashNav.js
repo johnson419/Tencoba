@@ -29,12 +29,12 @@ const DashNav = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <button className="text-white">
+            {/* <button className="text-white">
               <FontAwesomeIcon icon={faBars} />
             </button>
             <span className="ml-4 text-white font-semibold text-lg">
               Dashboard
-            </span>
+            </span> */}
           </div>
           <div className="flex items-center">
             <div className="relative">
@@ -46,7 +46,7 @@ const DashNav = () => {
               />
               <FontAwesomeIcon
                 icon={faSearch}
-                className="text-white absolute top-1/2 right-3 transform -translate-y-1/2"
+                className="text-white text-sm absolute top-1/2 right-3 transform -translate-y-1/2"
               />
             </div>
             <div className="relative ml-4" ref={dropdownRef}>
