@@ -46,7 +46,7 @@ const DashNav = () => {
               />
               <FontAwesomeIcon
                 icon={faSearch}
-                className="text-white absolute top-1/2 right-3 transform -translate-y-1/2"
+                className="text-gray-300   absolute top-1/2 right-3 transform -translate-y-1/2"
               />
             </div>
             <div className="relative ml-4" ref={dropdownRef}>
