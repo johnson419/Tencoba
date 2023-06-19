@@ -1,34 +1,120 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faChartLine, faWallet, faCreditCard } from '@fortawesome/free-solid-svg-icons';
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import {
+  MdOutlineSpaceDashboard,
+  MdOutlineAnalytics,
+  MdOutlineIntegrationInstructions,
+  MdOutlineSettings,
+  MdOutlineMoreHoriz,
+  MdOutlineLogout,
+} from "react-icons/md";
+import { CgProfile } from "react-icons/cg";
+import { FaRegComments } from "react-icons/fa";
+import { BiMessageSquareDots } from "react-icons/bi";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { Disclosure } from "@headlessui/react";
 
 const Sidebar = () => {
   return (
-    <div className="bg-gray-800 text-white h-screen mx-auto top-0 left-3 py-4 px-2 flex flex-col items-start rounded-xl">
-      <a href="#" className="mb-8 flex items-center">
-        <div className="w-6">
-          <FontAwesomeIcon icon={faHome} size="1x" />
+    <div>
+      <Disclosure as="nav">
+        {/*  */}
+        <Disclosure.Button className="absolute top-4 right-4 inline-flex items-center peer justify-center rounded-sm p2 text-white hover:text-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white group hover:bg-white">
+          <GiHamburgerMenu
+            className="block md:hidden H-6 W-6"
+            aria-hidden="true"
+          />
+        </Disclosure.Button>
+        {/* Side Panel */}
+        <div className="p-6 w-1/2 h-screen bg-gray-800 z-20 fixed top-0 -left-96 lg:w-60 lg:left-0 peer-focus:left-0 peer:transition ease-out delay-150 duration-200">
+          <div className="flex flex-col justify-start items-center">
+            <Link
+              href="/"
+              passHref
+              className="cursor-pointer border-gray-100 pb-4"
+            >
+              <Image src="/logo.png" alt="logo" width={150} height={10} />{" "}
+            </Link>
+            {/* <h1 className="text-base text-center cursor-pointer font-bold text-gray-300 border-gray-100 pb-4 w-full">
+              TENCOBA
+            </h1> */}
+            <div className="my-4 border-b border-gray-800 pb-4 w-full">
+              <Link href="/Dashboard" className="flex mb-2 justify-start items-center gap-5 px-5 hover:bg-gray-500 p-2 rounded-md group cursor pointer hover:shadow-lg m-auto">
+                {/* Needed Icons */}
+                <MdOutlineSpaceDashboard className="text-2xl text-gray-300 group-hover:text-black" />
+                <h3 className="text-base text-gray-300 group-hover:text-black font-semibold mr-1">
+                  Dashboard
+                </h3>
+              </Link>
+              <Link href="/Profile" className="flex mb-2 justify-start items-center gap-5 px-5 hover:bg-gray-500 p-2 rounded-md group cursor pointer hover:shadow-lg m-auto">
+                {/* Needed Icons */}
+                <CgProfile className="text-2xl text-gray-300 group-hover:text-black" />
+                <h3 className="text-base text-gray-300 group-hover:text-black font-semibold mr-1">
+                  Profile
+                </h3>
+              </Link>
+              <Link href="/" className="flex mb-2 justify-start items-center gap-5 px-5 hover:bg-gray-500 p-2 rounded-md group cursor pointer hover:shadow-lg m-auto">
+                {/* Needed Icons */}
+                <FaRegComments className="text-2xl text-gray-300 group-hover:text-black" />
+                <h3 className="text-base text-gray-300 group-hover:text-black font-semibold mr-1">
+                  Comments
+                </h3>
+              </Link>
+              <Link href="/" className="flex mb-2 justify-start items-center gap-5 px-5 hover:bg-gray-500 p-2 rounded-md group cursor pointer hover:shadow-lg m-auto">
+                {/* Needed Icons */}
+                <MdOutlineAnalytics className="text-2xl text-gray-300 group-hover:text-black" />
+                <h3 className="text-base text-gray-300 group-hover:text-black font-semibold mr-1">
+                  Analytics
+                </h3>
+              </Link>
+              <Link href ="/" className="flex mb-2 justify-start items-center gap-5 px-5 hover:bg-gray-500 p-2 rounded-md group cursor pointer hover:shadow-lg m-auto">
+                {/* Needed Icons */}
+                <BiMessageSquareDots className="text-2xl text-gray-300 group-hover:text-black" />
+                <h3 className="text-base text-gray-300 group-hover:text-black font-semibold mr-1">
+                  Messages
+                </h3>
+              </Link>
+              <Link href="/" className="flex mb-2 justify-start items-center gap-5 px-5 hover:bg-gray-500 p-2 rounded-md group cursor pointer hover:shadow-lg m-auto">
+                {/* Needed Icons */}
+                <MdOutlineIntegrationInstructions className="text-2xl text-gray-300 group-hover:text-black" />
+                <h3 className="text-base text-gray-300 group-hover:text-black font-semibold mr-1">
+                  Integrations
+                </h3>
+              </Link>
+            </div>
+
+            {/* Settings & More */}
+            <div className="my-4 border-b border-gray-800 pb-4 w-full">
+              <Link href="/" className="flex mb-2 justify-start items-center gap-5 px-5 hover:bg-gray-500 p-2 rounded-md group cursor pointer hover:shadow-lg m-auto">
+                {/* Needed Icons */}
+                <MdOutlineSettings className="text-2xl text-gray-300 group-hover:text-black" />
+                <h3 className="text-base text-gray-300 group-hover:text-black font-semibold mr-1">
+                  Settings
+                </h3>
+              </Link>
+              <Link href="/" className="flex mb-2 justify-start items-center gap-5 px-5 hover:bg-gray-500 p-2 rounded-md group cursor pointer hover:shadow-lg m-auto">
+                {/* Needed Icons */}
+                <MdOutlineMoreHoriz className="text-2xl text-gray-300 group-hover:text-black" />
+                <h3 className="text-base text-gray-300 group-hover:text-black font-semibold mr-1">
+                  More
+                </h3>
+              </Link>
+            </div>
+
+            {/* Logout */}
+            <div className="my-4 w-full">
+              <Link href="/" className="flex mb-2 justify-start items-center gap-5 px-5 border border-gray-500 hover:bg-gray-500 p-2 rounded-md group cursor pointer hover:shadow-lg m-auto">
+                {/* Needed Icons */}
+                <MdOutlineLogout className="text-2xl text-gray-300 group-hover:text-black" />
+                <h3 className="text-base text-gray-300 group-hover:text-black font-semibold mr-1">
+                  Log out
+                </h3>
+              </Link>
+            </div>
+          </div>
         </div>
-        <span className="ml-2 text-sm text-center">Home</span>
-      </a>
-      <a href="#" className="mb-8 flex items-center">
-        <div className="w-6">
-          <FontAwesomeIcon icon={faChartLine} size="1x" />
-        </div>
-        <span className="ml-2 text-sm text-center">Charts</span>
-      </a>
-      <a href="#" className="mb-8 flex items-center">
-        <div className="w-6">
-          <FontAwesomeIcon icon={faWallet} size="1x" />
-        </div>
-        <span className="ml-2 text-sm text-center">Wallet</span>
-      </a>
-      <a href="#" className="mb-8 flex items-center">
-        <div className="w-6">
-          <FontAwesomeIcon icon={faCreditCard} size="1x" />
-        </div>
-        <span className="ml-2 text-sm text-center">Credit Card</span>
-      </a>
+      </Disclosure>
     </div>
   );
 };

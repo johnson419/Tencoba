@@ -1,7 +1,16 @@
-import DashNav from "@/components/DashNav";
+import BaseLayout from "@/components/BaseLayout";
+import Hero from "@/components/Hero";
+import SiteTitle from "@/components/SiteTitle";
 
 const Profile = () => {
-  return <h1>Profile</h1>;
+  return (
+    <>
+      <SiteTitle />
+      <BaseLayout>
+        <Hero />
+      </BaseLayout>
+    </>
+  );
 };
 
 export default Profile;
