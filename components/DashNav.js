@@ -44,10 +44,10 @@ const DashNav = () => {
                 placeholder="Search..."
                 aria-label="Search..."
               />
-              <FontAwesomeIcon
+              {/* <FontAwesomeIcon
                 icon={faSearch}
-                className="text-white text-sm absolute top-1/2 right-3 transform -translate-y-1/2"
-              />
+                className="text-white absolute top-1/2 right-3 transform -translate-y-1/2"
+              /> */}
             </div>
             <div className="relative ml-4" ref={dropdownRef}>
               <button
