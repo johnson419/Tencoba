@@ -29,12 +29,6 @@ const DashNav = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            {/* <button className="text-white">
-              <FontAwesomeIcon icon={faBars} />
-            </button>
-            <span className="ml-4 text-white font-semibold text-lg">
-              Dashboard
-            </span> */}
           </div>
           <div className="flex items-center">
             <div className="relative">
