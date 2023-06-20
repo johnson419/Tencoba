@@ -1,5 +1,5 @@
 import BaseLayout from "@/components/BaseLayout";
-import Hero from "@/components/Hero";
+import Hero from "@/components/about/Hero";
 import SiteTitle from "@/components/SiteTitle";
 
 const Profile = () => {
