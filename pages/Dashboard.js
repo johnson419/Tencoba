@@ -1,7 +1,6 @@
-import DashNav from "@/components/DashNav";
 import Hero from "@/components/homepage/Hero";
-import Sidebar from "@/components/Sidebar";
-import Testimonials from "@/components/homepage/Testimonials";
+import SiteTitle from "@/components/SiteTitle";
+import BaseLayout from "@/components/BaseLayout";
 
 function Dashboard() {
   return (
