@@ -17,21 +17,21 @@ const Nav = () => {
         </div>
         {/* navbar menus */}
         <div className="hidden md:flex space-x-6">
-          <a href="#" className="hover:text-blue-300">
+          <Link href="#" className="hover:text-blue-300">
             Services
-          </a>
-          <a href="#" className="hover:text-blue-300">
+          </Link>
+          <Link href="#" className="hover:text-blue-300">
             Events
-          </a>
-          <a href="#" className="hover:text-blue-300">
+          </Link>
+          <Link href="/About" className="hover:text-blue-300">
             About us
-          </a>
-          <a href="#" className="hover:text-blue-300">
+          </Link>
+          <Link href="#" className="hover:text-blue-300">
             Terms
-          </a>
-          <a href="#" className="hover:text-blue-300">
+          </Link>
+          <Link href="#" className="hover:text-blue-300">
             Community
-          </a>
+          </Link>
         </div>
 
         {/* Button */}

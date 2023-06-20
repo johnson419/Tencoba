@@ -1,14 +1,19 @@
-import SiteTitle from "@/components/SiteTitle";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import Hero from "@/components/about/Hero";
 
-function About() {
-  return (
-    <>
-    <SiteTitle/>
+const About = () => {
+    return (
       <div>
-        <h1>About</h1>
+      
+        <Navbar />
+        <Hero />
+        <Feature />
+        <Testimonials />
+        <CTA />
+        <Footer />
       </div>
-    </>
-  );
-}
-
-export default About;
+    );
+  };
+  
+  export default About;
