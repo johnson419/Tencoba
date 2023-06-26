@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Button from "@/about/Button";
 
 const Hero = () => {
   return (
@@ -37,12 +38,9 @@ const Hero = () => {
                     journey.
           </p>
           <div className="flex justify-start">
-            <Link
-              href="/Register"
-              className="hidden md:block py-2 px-4 text-white bg-blue-500 rounded-lg shadow-md hover:bg-blue-600 transition-colors duration-300"
-            >
-              Get Started
-            </Link>
+          <Button className="border border-black_900 border-solid cursor-pointer font-semibold leading-[normal] min-w-[172px] sm:px-5 px-[25px] py-3 text-black_900 text-center text-lg tracking-[-0.50px]">
+                  Meet our Team
+                </Button>
           </div>
         </div>
         {/* image - right-side */}
